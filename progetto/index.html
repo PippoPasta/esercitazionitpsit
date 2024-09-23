@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Qui tutto il resto della pagina HTML (DOM -> Document Object Model)-->
+
+    <!-- in coda al body (prima della sua chiusura) andiamo a inserire gil script JS;
+     
+        in questa maniera ci assicuriamo che il DOM venga immediatamente caricato in RAM quando gli script vengono caricati ed eseguiti-->
+    <script type="text/javascript">
+        // Qui va un commento monoriga in Javascript
+
+        /*
+           Qui va un commento multiriga in Javascript
+        */
+
+        /*
+            Javascript è un linguaggio debolmente tipizzato.
+            I tipi di dato ESISTONO ma non siamo costretti a dichiarare variabile insieme
+
+            Per dichiarare una variabile in JS si usa la parola chiave 'let':
+
+            es. let myVar = 4;
+        */
+        
+        
+        let Nome = prompt("Nome: ")
+
+        while (Nome  == null){
+            alert("Devi inserire un dato ")
+           Nome = prompt("Nome: ")
+        }
+        let Eta = prompt("Età: ")
+
+        while (Eta == null){
+            alert("Devi inserire un dato ")
+            Eta = prompt("Età: ")
+        }
+
+        let Email = prompt("Email: ")
+
+        while (Email == null){
+            alert("Devi inserire un dato ")
+           Email = prompt("Email: ")
+
+        }
+
+        alert("Benvenuto " + Nome + " (" + Eta + " anni): la tua email è " + Email)
+
+    </script>
+</body>
+</html>
+
